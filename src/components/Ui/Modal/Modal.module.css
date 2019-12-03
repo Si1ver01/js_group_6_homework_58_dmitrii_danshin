@@ -1,0 +1,66 @@
+.Modal{
+  width: 500px;
+  height: auto;
+  border: 2px solid #00695c;
+  box-sizing: border-box;
+  margin: 150px auto;
+  z-index: 100;
+  background: #bdbdbd;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.Modal h1{
+  margin-top: 0;
+  margin-left: 10px;
+  color: #1C2331;
+}
+
+.Modal hr{
+  height: 2px;
+  background: #3E4551;
+  border:0;
+}
+
+.Modal p{
+  margin-left: 10px;
+}
+
+.Header{
+  height: 50px;
+  width: 100%;
+  background: #2BBBAD;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  text-align: right;
+  border-bottom: 2px solid #00695c;
+}
+
+.Close{
+  line-height: 50px;
+  cursor: pointer;
+  color:#fff;
+  margin-right: 10px;
+  transition: .5s ease-in;
+  border: 2px solid #00695c;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.Close:hover{
+  color : #00695c;
+}
+
+.Backdrop{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.506);
+}
+
+.Main{
+  padding: 20px;
+}
+

@@ -1,0 +1,76 @@
+ .Button {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  margin: 10px 5px 0 5px;
+  color: #000;
+  box-shadow: 0 0 0 2px #000;
+  padding: 5px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border:none;
+  outline: none;
+  background: transparent;
+}
+span {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  z-index: 5;
+}
+.Button:before, 
+.Button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.Button:before{
+  transform: translateX(-100%);
+  background: white;
+  transition: transform .3s cubic-bezier(.55,.055,.675,.19);
+}
+.Button:after {
+  background: #4f4e5e;
+  transform: translateX(100%);
+  transition: transform .3s cubic-bezier(.16,.73,.58,.62) .3s;
+}
+.Button:hover:before,
+.Button:hover:after {transform: translateX(0);}
+
+.danger{
+  box-shadow: 0 0 0 2px #CC0000;
+}
+
+.danger::after{
+  background: #CC0000;
+}
+
+.warning{
+  box-shadow: 0 0 0 2px #FF8800;
+}
+
+.warning::after{
+  background: #FF8800;
+}
+
+.success{
+  box-shadow: 0 0 0 2px #007E33;
+}
+
+.success::after{
+  background: #007E33;
+}
+
+.info {
+  box-shadow: 0 0 0 2px #0099CC;
+}
+
+.info::after{
+  background: #0099CC;
+}
